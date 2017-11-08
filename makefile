@@ -5,7 +5,7 @@ signal.o: signal.c
 	gcc -c signal.c
 
 clean:
-	rm -rf *.o *~ a.out
+	rm -f *.o *~ a.out text.txt
 
-run:
+run: all
 	./a.out

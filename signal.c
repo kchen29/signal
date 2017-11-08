@@ -14,7 +14,7 @@ static void sighandler(int signum) {
     
     exit(1);
   } else if (signum == SIGUSR1) {
-    printf("SIGUSR1 signal received; PID: %d\n", getpid());
+    printf("SIGUSR1 signal received; parent PID: %d\n", getppid());
   }
 }
 
